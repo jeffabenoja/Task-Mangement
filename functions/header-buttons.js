@@ -17,6 +17,7 @@ function handleClick(e) {
 chevron.addEventListener('click', function() {
     if(chevron.src === "http://127.0.0.1:5500/assets/icon-chevron-down.svg") {
         chevron.src = "./assets/icon-chevron-up.svg";
+        console.log('working tho');
     } else {
         chevron.src = "./assets/icon-chevron-down.svg";
     }

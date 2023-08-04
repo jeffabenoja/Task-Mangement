@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution Here](https://github.com/jeffabenoja/Task-Mangement.git)
+- Live Site URL: [Live Site Here](https://jeffabenoja.github.io/Task-Mangement/)
 
 ### Built with
 

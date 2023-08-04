@@ -1,0 +1,58 @@
+.header-container {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #fff;
+    border-bottom: 1px solid #E4EBFA;
+}
+
+.logo-container {
+    position: relative;
+    gap: 0.938rem;
+    flex-shrink: 2;
+}
+
+.logo-text {
+    display: none;
+}
+
+@media only screen and (min-width: 48rem) {
+    .logo-container {
+        min-width: calc(16.25rem - 1rem);
+    }
+    .logo-container img {
+        margin-left: 1.125rem;
+    }
+    .logo-text {
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .logo-container::after {
+        position: absolute;
+        content: "";
+        top: -1.5rem;
+        right: 0;
+        width: 1px;
+        height: 5.563rem;
+        border: 1px solid #E4EBFA;
+    }
+
+    .padding-md-2 {
+        padding-top: 1.25rem;
+        padding-bottom: 1.75rem;
+    }
+}
+
+.board-header {
+    flex: 1;
+}
+
+@media only screen and (min-width: 79.25rem) {
+    .logo-container {
+        width: calc(18.75rem - 1rem)
+    }
+}
+

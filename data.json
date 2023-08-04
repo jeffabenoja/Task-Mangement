@@ -1,0 +1,306 @@
+{
+  "boards": [
+    {
+      "name": "School Activity",
+      "columns": [
+        {
+          "name": "Todo",
+          "tasks": [
+            {
+              "title": "Build UI Application",
+              "description": "",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Create Task",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Create Column",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Create Board",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Update Task UI",
+              "description": "",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Move Task",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Task settings UI",
+              "description": "",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Edit Task",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Delete Task",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Java Programming GUI",
+              "description": "Build GUI for our subject java programming this will be our final activity for this subject.",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Payroll System",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Grading System",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Doing",
+          "tasks": [
+            {
+              "title": "Term OS Reporting",
+              "description": "",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Create a PowerPoint Presentation",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Report the presentation",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "OS Final Exam",
+              "description": "",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Review all the lesson",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Take the exam",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Passed the exam",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Cloud Computing Percicpio",
+              "description": "",
+              "status": "Doing",
+              "subtasks": [
+                {
+                  "title": "Cloud computing fundamentals: introduction",
+                  "isCompleted": true
+                },
+                {
+                  "title": "Cloud computing fundamentals: consideration",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Cloud computing fundamentals: virtualization & data centers",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Done",
+          "tasks": [
+            {
+              "title": "Java Percipio 6 and 7",
+              "description": "Ensure that all the percipio from 1 to 7 are done watching.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Object Oriented Programming",
+                  "isCompleted": true
+                },
+                {
+                  "title": "SE Object Oriented Programming",
+                  "isCompleted": true
+                }
+              ]
+            },
+            {
+              "title": "Interview in Purposive Communication",
+              "description": "Keep iterating through the subtasks until we're clear on the task.",
+              "status": "Done",
+              "subtasks": [
+                {
+                  "title": "Get Hired",
+                  "isCompleted": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Marketing Plan",
+      "columns": [
+        {
+          "name": "Task",
+          "tasks": [
+            {
+              "title": "Plan Product Hunt launch",
+              "description": "",
+              "status": "Todo",
+              "subtasks": [
+                {
+                  "title": "Find hunter",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Gather assets",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Draft product page",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Notify customers",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Notify network",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Launch!",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Share on Show HN",
+              "description": "",
+              "status": "",
+              "subtasks": [
+                {
+                  "title": "Draft out HN post",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Get feedback and refine",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Publish post",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Write launch article to publish on multiple channels",
+              "description": "",
+              "status": "",
+              "subtasks": [
+                {
+                  "title": "Write article",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Publish on LinkedIn",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Publish on Inndie Hackers",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Publish on Medium",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Doing",
+          "tasks": []
+        },
+        {
+          "name": "Finished",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "name": "Roadmap",
+      "columns": [
+        {
+          "name": "Now",
+          "tasks": [
+            {
+              "title": "Launch version one",
+              "description": "",
+              "status": "",
+              "subtasks": [
+                {
+                  "title": "Launch privately to our waitlist",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Launch publicly on PH, HN, etc.",
+                  "isCompleted": false
+                }
+              ]
+            },
+            {
+              "title": "Review early feedback and plan next steps for roadmap",
+              "description": "Beyond the initial launch, we're keeping the initial roadmap completely empty. This meeting will help us plan out our next steps based on actual customer feedback.",
+              "status": "",
+              "subtasks": [
+                {
+                  "title": "Interview 10 customers",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Review common customer pain points and suggestions",
+                  "isCompleted": false
+                },
+                {
+                  "title": "Outline next steps for our roadmap",
+                  "isCompleted": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Next",
+          "tasks": []
+        },
+        {
+          "name": "Later",
+          "tasks": []
+        }
+      ]
+    }
+  ]
+}

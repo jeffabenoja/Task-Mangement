@@ -1,0 +1,35 @@
+@import url(../variables/style.css);
+.column {
+    width: 280px;
+
+    & .column__title {
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-left: 27px;
+    }
+    
+    & .column__title::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-right: 20px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: var(--random-color);
+    }
+
+    & .card__container {
+        gap: 20px;
+        
+        & .card {
+            border: 1px solid rgba(134, 134, 134, 0.1);
+            box-shadow: 0 4px 6px #364e7e1a;
+            padding: 24px 16px;
+            margin-bottom: 20px;
+            gap: 8px;
+            cursor: pointer;
+        }
+    }
+}

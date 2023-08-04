@@ -1,0 +1,242 @@
+@import url(../variables/style.css);
+
+
+.modal-container, .main_task__modal {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0, .5);
+
+    display: none;
+}
+
+/* .main_task__modal {
+    display: block;
+} */
+
+.main_task__modal {
+    & .task__modal, .viewTask {
+        display: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 343px;
+        height: 600px;
+        padding: 1.5rem;
+        border-radius: 6px;
+        background-color: var(--clr--primary-100);
+
+        overflow: auto;
+        overscroll-behavior: contain;
+
+        @media (min-width: 48rem) {
+            width: 480px;
+        }
+
+        & :is(input:active, input:focus),
+          :is(.text__area:active, .text__area:focus) {
+            border: 1px solid var(--clr-secondary-400);
+        }
+
+        & .input__field, 
+          .text__area,
+          .subtask__field,
+          .task__status {
+            outline: transparent;
+            border: 1px solid rgba(130, 143, 163, 0.4);
+            width: 100%;
+            padding: 8px 1rem;
+            border-radius:  4px;
+        }
+
+        & .task__status {
+            position: relative;
+
+            & .taskColumn__container {
+                display: none;
+                padding: 1rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-bottom: 10px;
+                transform: translateY(3rem);
+                background-color: #FFF;
+                border-radius: 6px;
+                width: 100%;
+                height: fit-content;
+                box-shadow: 0 0 8px #364e7e1a;
+
+                & ul {
+                    padding: 0;
+                    margin-bottom: 0;
+                    list-style-type: none;
+
+                    & li {
+                        text-transform: capitalize;
+                        margin-bottom: 8px;
+                        color: #828FA3;
+                        cursor: pointer;
+                    }
+
+                    & :hover {
+                        color: #000;
+                        font-weight: bold;
+                    }
+                }
+            }
+            & .update__status {
+                /* display: block; */
+                display: none;
+            }
+        }
+
+        & .empty__inputFields {
+            border: 1px solid red;
+        }
+
+        & .input__field::placeholder,
+          .text__area::placeholder,
+          .subtask__field::placeholder {
+            font-size: var(--body-l);
+            font-weight: var(--fw-medium);
+            line-height: var(--line-height-l);
+            color: rgba(130, 143, 163, 0.4);
+        }
+
+        & .text__area {
+            resize: none;
+            height: 112px;
+        }
+    }
+
+    & .task__modal::-webkit-scrollbar, .viewTask::-webkit-scrollbar {
+        display: none;
+    }
+
+    & .viewTask {
+        overflow-y: auto;
+        height: fit-content;
+
+        & .card_header {
+            position: relative;
+            gap: 16px;
+            justify-content: space-between;
+
+            & h4 {
+                width: 270px;
+            }
+
+            & .ellipsis__task {
+                position: absolute;
+                top: 100%;
+                right: 0;
+
+                display: none;
+                background-color: #FFF;
+                width: 160px;
+                padding: 1rem;
+                border-radius: 8px;
+                box-shadow: 0 0px 10px rgb(0 0 0 / 0.2);
+                text-align: left;
+    
+                @media (min-width: 48rem) {
+                    width: 192px;
+                }
+            }
+
+            & .show_task_option {
+                display: block;
+            }
+        }
+        
+    }
+}
+
+
+#modal-createBoard {
+    padding: 2rem;
+    border-radius: 6px;
+    overflow-y: auto;
+    background-color: var(--clr--primary-100);
+    width: 343px;
+    /* height: 600px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    overflow: auto;
+    overscroll-behavior: contain;
+
+    @media (min-width: 48rem) {
+        width: 480px;
+    }
+}
+
+#modal-createBoard::-webkit-scrollbar {
+    display: none;
+}
+
+#modal-createBoard * p,
+.modalInput::placeholder {
+    margin-bottom: 8px;
+    font-size: var(--body-l);
+    font-weight: var(--fw-medium);
+}
+
+.modalInput {
+    height: 40px;
+    padding: 8px 0 8px 16px;
+    outline: transparent;
+    border: 1px solid rgba(130, 143, 163, .25);
+    border-radius: 4px;
+    line-height: 23px;
+}
+
+.modal-column > div {
+    margin-bottom: 12px;
+}
+
+.column-Title {
+    width: 385px;
+}
+
+.cross-icon {
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background-color: rgba(99, 95, 199, 0.10);
+}
+
+.secondary-btn:hover,
+.secondary-btn:active {
+    background-color: rgba(99, 95, 199, 0.25);
+}
+
+.primary-btn {
+    background-color: rgb(99, 95, 199);
+}
+
+.primary-btn:hover,
+.primary-btn:active {
+    background-color: rgb(168, 164, 255);
+}
+
+.modal-Btn {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.empty__inputFields {
+    border: 1px solid red;
+}

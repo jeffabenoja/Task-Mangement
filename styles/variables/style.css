@@ -1,0 +1,322 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+
+/* Root */
+
+:root {
+    --clr--primary-100: rgb(255, 255, 255);
+    --clr-primary-200: rgb(244, 247, 253);
+    --clr-primary-300: rgb(228, 235, 250);
+    --clr-primary-400: rgb(130, 143, 163);
+    
+    --clr-dark-primary-100: rgb(62, 63, 78);
+    --clr-dark-primary-200: rgb(43, 44, 45);
+    --clr-dark-primary-300: rgb(32, 33, 44);
+    --clr-dark-primary-400: rgb(0, 1, 18);
+ 
+    --clr-secondary-100: rgb(255, 152, 152);
+    --clr-secondary-200: rgb(234, 85, 85);
+    --clr-secondary-300: rgb(168, 164, 255);
+    --clr-secondary-400: rgb(99, 95, 199);
+
+    --heading-xl: 1.5rem;
+    --heading-l: 1.125rem;
+    --heading-m: 0.938rem;
+    --heading-s: 0.75rem;
+
+    --line-height-xl: 1.875rem;
+    --line-height-l: 1.438rem;
+    --line-height-m: 1.188rem;
+    --line-height-s: 0.938rem;
+
+    --fw-bold: 700;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+    --body-l: 0.813rem;
+    --body-m: 0.75rem;
+
+    --border-radius: 1.5rem;
+}
+
+
+/* CSS Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin & padding
+  */
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    font-family: Plus Jakarta Sans,sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+  }
+
+/* Utilities */
+[data-type="visually-hidden"] {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+}
+
+.bg-primary-100 {
+    background-color: var(--clr--primary-100);
+}
+
+.bg-primary-200 {
+    background-color: var(--clr-primary-200);
+}
+
+.bg-primary-300 {
+    background-color: var(--clr-primary-300);
+}
+
+.bg-primary-400 {
+    background-color: var(--clr-primary-400);
+}
+
+.bg-dark-100 {
+    background-color: var(--clr-dark-primary-100);
+}
+
+.bg-dark-200 {
+    background-color: var(--clr-dark-primary-200);
+}
+
+.bg-dark-300 {
+    background-color: var(--clr-dark-primary-300);
+}
+
+.bg-dark-400 {
+    background-color: var(--clr-dark-primary-400);
+}
+
+.bg-secondary-100 {
+    background-color: var(--clr-secondary-100);
+}
+
+.bg-secondary-200 {
+    background-color: var(--clr-secondary-200);
+}
+
+.bg-secondary-300 {
+    background-color: var(--clr-secondary-300);
+}
+
+.bg-secondary-400 {
+    background-color: var(--clr-secondary-400);
+    
+}
+
+.clr-primary-100 {
+    color: var(--clr--primary-100);
+}
+
+.clr-primary-200 {
+    color: var(--clr-primary-200);
+}
+
+.clr-primary-300 {
+    color: var(--clr-primary-300);
+}
+
+.clr-primary-400 {
+    color: var(--clr-primary-400);
+}
+
+.clr-dark-100 {
+    color: var(--clr-dark-primary-100);
+}
+
+.clr-dark-200 {
+    color: var(--clr-dark-primary-200);
+}
+
+.clr-dark-300 {
+    color: var(--clr-dark-primary-300);
+}
+
+.clr-dark-400 {
+    color: var(--clr-dark-primary-400);
+}
+
+.clr-secondary-100 {
+    color: var(--clr-secondary-100);
+}
+
+.clr-secondary-200 {
+    color: var(--clr-secondary-200);
+}
+
+.clr-secondary-300 {
+    color: var(--clr-secondary-300);
+}
+
+.clr-secondary-400 {
+    color: var(--clr-secondary-400);
+}
+
+.body-l {
+    font-size: var(--body-l);
+    font-weight: var(--fw-medium);
+    line-height: var(--line-height-l);
+}
+
+.body-m {
+    font-size: var(--body-m);
+    font-weight: var(--fw-bold);
+    line-height: var(--line-height-s);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.heading-XL {
+    font-size: var(--heading-xl);
+    font-weight: var(--fw-bold);
+    line-height: var(--line-height-xl);
+}
+
+.heading-L {
+    font-size: var(--heading-l);
+    font-weight: var(--fw-bold);
+    line-height: var(--line-height-l);
+}
+
+.heading-M {
+    font-size: var(--heading-m);
+    font-weight: var(--fw-bold);
+    line-height: var(--line-height-m);
+}
+
+.heading-S {
+    font-size: var(--heading-s);
+    font-weight: var(--fw-bold);
+    line-height: var(--line-height-s);
+    letter-spacing: 2.4px;
+}
+
+.text-XL {
+    font-size: var(--heading-xl);
+    line-height: var(--line-height-xl);
+}
+
+.text-L {
+    font-size: var(--heading-l);
+    line-height: var(--line-height-l);
+}
+
+.text-M {
+    font-size: var(--heading-m);
+    line-height: var(--line-height-m);
+}
+
+.text-S {
+    font-size: var(--heading-s);
+    line-height: var(--line-height-s);
+}
+
+.border-radius-xl {
+    border-radius: var(--border-radius);
+}
+
+.flex {
+    display: flex;
+}
+.flex-direction {
+    flex-direction: column;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.padding-md-2 {
+    padding-block: 1.25rem;
+}
+.padding-top-2 {
+    padding-top: 0.938rem;
+}
+
+.border-r-20 {
+    border-radius: 20px;
+}
+
+:is(input:active, input:focus) {
+    border: 1px solid var(--clr-secondary-400);
+}
+
+.mb-small {
+    margin-bottom: 8px;
+}
+
+.gap-small {
+    gap: 12px;
+}
+
+/* Custom Styling */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+#app {
+    background-color: var(--clr-primary-200);
+    min-height: 100vh;
+}
+

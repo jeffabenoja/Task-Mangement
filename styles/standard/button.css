@@ -1,0 +1,140 @@
+
+/* Header Buttons */
+
+header {
+    & button {
+        border: transparent;
+    }
+    
+}
+
+.primary__navigation {
+    display: inline-flex;
+
+    @media only screen and (min-width: 768px) {    
+        & .chevron-icon {
+            display: none;
+        }
+    }
+}
+
+.primary__modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 72.8px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: calc(100vh - 78.2px);
+
+    & .primary__dropdown_container  {
+        overflow: auto;
+        overscroll-behavior: contain;
+
+
+        background-color: #FFF;
+        border-radius: 8PX;
+        width: 264px;
+        /* height: 350px; */
+        min-height: 150px;
+        max-height: 350px;
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1rem 1.5rem 1rem 0;
+    }
+
+    & .primary__dropdown_container::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.primary__modal__show {
+    display: block !important;
+}
+
+
+.task {
+    position: relative;
+    & .task-btn {
+        background-color: rgb(99, 95, 199);
+    }
+
+    & .add-task-mobile {
+        padding: 0.625rem 1.125rem; 
+    }
+    
+    & .add-task-desktop {
+        display: none;
+        padding: 15px 24px;
+        
+    }
+
+    & .header-button:hover, .header-button:active {
+        background-color: rgb(168, 164, 255);
+    }
+
+    & .ellipsis-btn:hover, .ellipsis-btn:active {
+        background-color: #FFF;
+    }
+
+    @media (min-width: 768px) {
+        .add-task-mobile {
+            display: none;
+        }
+        .add-task-desktop {
+            display: block;
+        }
+    }
+
+    & .ellipsis__dropdown {
+        display: none;
+        background-color: #FFF;
+        width: 160px;
+        padding: 1rem;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        border-radius: 8px;
+        box-shadow: 0 0px 10px rgb(0 0 0 / 0.2);
+
+        @media (min-width: 48rem) {
+            width: 192px;
+            top: 65px;
+        }
+    }
+
+    & .show_ellipsis {
+        display: block;
+    }
+}
+
+#edit_board, #edit_task {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+#delete_board, #delete_task {
+    color: red;
+    cursor: pointer
+}
+
+.chevron-icon {
+    background-color: #FFF;
+}
+
+.task-chevron-transition {
+    transition: all 0.3s ease; /* You can adjust the duration and easing function as desired */
+}
+
+#addSubtask-btn {
+    margin-top: 12px;
+}
+
+.move-task-btn {
+    display: none;
+    width: 160px;
+    padding-block: 8px;
+}
